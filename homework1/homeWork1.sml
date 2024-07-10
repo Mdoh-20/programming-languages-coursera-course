@@ -187,7 +187,7 @@ fun remove_dup (ms: int list) =
 fun number_in_months_challenge (dates, ms) =
     let val lst = remove_dup (ms)
     in number_in_months (dates, lst)
-    end
+    end;
 
 
 (* int*int*int list, int list -> int *)
