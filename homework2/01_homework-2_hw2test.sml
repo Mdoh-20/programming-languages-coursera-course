@@ -130,7 +130,7 @@ val test101 = score ([(Clubs, King), (Spades, Num 5)],6) = 13
 val test102 = score ([(Hearts, Ace), (Diamonds,Num 9)
 		      ,(Spades, Jack)], 9) = 63
 val test103 = score ([(Diamonds, Ace)], 6) = 7
-val test104 = score ([],10) = 0
+val test104 = score ([],10) = 5
 val test105 = score ([(Spades, Num 9),(Spades, Num 3),(Spades, Num 5)]
 		    , 10) = 10
 

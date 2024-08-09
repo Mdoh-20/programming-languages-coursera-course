@@ -5,7 +5,7 @@
    then you avoid several of the functions in problem 1 having
    polymorphic types that may be confusing *)
 
-fun same_string(s1, s2) =
+fun same_string(s1:string, s2:string) =
     s1 = s2;
 
 (* put your solutions for problem 1 here *)
@@ -74,7 +74,14 @@ fun similar_names (listSList, {first, middle, last}) =
 	  | create_names (name::rest, acc) =
 	    create_names (rest,
 			  acc@[{first=name, middle=middle, last=last}])
-    in create_names(lst,[]) end
+    in create_names(lst,[]) end;
+
+fun similar_names1 (listSList, (first, middle, last)) =
+    let
+	val lst = first :: get_substitutions2(listSList, first)
+    in
+	map (fn name => {first = name, middle = middle, last = last}) lst
+    end	
 	
 (* you may assume that Num is always used with values 2, 3, ..., 10
    though it will not really come up *)
@@ -181,7 +188,7 @@ fun sum_cards cardList =
 
 (* fun score (cs: card list, goal: int) = 0 (* the stub *) *)
 
-fun score (cs, gaol) =
+fun score1 (cs, gaol) =
     let val sum = sum_cards cs
 	val DIV = all_same_color cs
     in case cs of
@@ -190,6 +197,14 @@ fun score (cs, gaol) =
 				   else 3 * (sum - gaol) 
 		else if DIV then (gaol - sum) div 2 else gaol - sum    
     end;
+
+fun score (cs,goal) = 
+    let 
+        val sum = sum_cards cs
+    in
+        (if sum >= goal then 3 * (sum - goal) else goal - sum)
+	      div (if all_same_color cs then 2 else 1)
+    end
 
 (* card list, move list, int -> int *)
 (* takes a card list (the card-list) a move list (what the player “does”
