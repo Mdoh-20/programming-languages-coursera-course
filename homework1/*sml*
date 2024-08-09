@@ -1,0 +1,1609 @@
+Standard ML of New Jersey (64-bit) v110.99.5 [built: Mon Apr 29 17:17:19 2024]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:51.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.24 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ''a list * ''a -> int
+val number_in_months = fn : ''a list * ''a list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : int list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = false : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = false : bool
+hw1test.sml:17.6-17.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:18.6-18.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,20) :: (2019,2,1) :: (2024,2,28) :: nil,2)
+hw1test.sml:19.6-19.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:51.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.24 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ''a list * ''a -> int
+val number_in_months = fn : ''a list * ''a list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : int list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = false : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = false : bool
+hw1test.sml:17.6-17.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:18.6-18.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,20) :: (2019,2,1) :: (2024,2,28) :: nil,2)
+hw1test.sml:19.6-19.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:51.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.24 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ''a list * ''a -> int
+val number_in_months = fn : ''a list * ''a list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : int list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = false : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = false : bool
+hw1test.sml:17.6-17.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:18.6-18.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,20) :: (2019,2,1) :: (2024,2,28) :: nil,2)
+hw1test.sml:19.6-19.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:53.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = false : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = false : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = false : bool
+val test33 = false : bool
+val test34 = true : bool
+hw1test.sml:31.6-31.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:32.6-33.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:34.6-34.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:52.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = false : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = false : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = false : bool
+val test33 = false : bool
+val test34 = true : bool
+hw1test.sml:31.6-31.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:32.6-33.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:34.6-34.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:52.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = false : bool
+val test33 = false : bool
+val test34 = true : bool
+hw1test.sml:31.6-31.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:32.6-33.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:34.6-34.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:52.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = false : bool
+val test33 = false : bool
+val test34 = true : bool
+hw1test.sml:31.6-31.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:32.6-33.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:34.6-34.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:52.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = false : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = false : bool
+val test33 = false : bool
+val test34 = true : bool
+hw1test.sml:31.6-31.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:32.6-33.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:34.6-34.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:52.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = false : bool
+val test33 = false : bool
+val test34 = true : bool
+hw1test.sml:31.6-31.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:32.6-33.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:34.6-34.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:53.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:33.6-33.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:34.6-35.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:36.6-36.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:53.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ''a -> ''a list
+val dates_in_months = fn : ''a list * ''a list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:33.6-33.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:34.6-35.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:36.6-36.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('Z[INT] * 'Y[INT] * 'X[INT])
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'W[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:54.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:25.27 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:49.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:52.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:24.24 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ''a list * ('b * ''a * 'c) -> int
+val number_in_months = fn : ''a list * ('b * ''a * 'c) list -> int
+val dates_in_month = fn : ''a list * ('b * ''a * 'c) -> ''a list
+val dates_in_months = fn : ''a list * ('b * ''a * 'c) list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+hw1test.sml:17.6-17.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('W * ('Z[INT] * 'Y[INT] * 'X[INT]) * 'V)
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'U[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:18.6-18.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('W * ('Z[INT] * 'Y[INT] * 'X[INT]) * 'V)
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'U[INT]
+  in expression:
+    number_in_month ((2012,2,20) :: (2019,2,1) :: (2024,2,28) :: nil,2)
+hw1test.sml:19.6-19.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('W * ('Z[INT] * 'Y[INT] * 'X[INT]) * 'V)
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'U[INT]
+  in expression:
+    number_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+hw1test.sml:20.6-20.41 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ''Z list * ('Y * ''Z * 'X)
+  operand:         ''Z list * 'W[INT]
+  in expression:
+    number_in_month (nil,6)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:54.23 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ''a list * ('b * ''a * 'c) -> ''a list
+val dates_in_months = fn : ''a list * ('b * ''a * 'c) list -> ''a list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:33.6-33.75 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('W * ('Z[INT] * 'Y[INT] * 'X[INT]) * 'V)
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'U[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,2)
+hw1test.sml:34.6-35.24 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('W * ('Z[INT] * 'Y[INT] * 'X[INT]) * 'V)
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'U[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,2,1) :: nil,2)
+hw1test.sml:36.6-36.64 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ('Z[INT] * 'Y[INT] * 'X[INT]) list
+                    * ('W * ('Z[INT] * 'Y[INT] * 'X[INT]) * 'V)
+  operand:         ('Z[INT] * 'Y[INT] * 'X[INT]) list * 'U[INT]
+  in expression:
+    dates_in_month ((2012,2,28) :: (2013,12,1) :: nil,5)
+hw1test.sml:37.6-37.41 Error: operator and operand do not agree [overload - bad instantiation]
+  operator domain: ''Z list * ('Y * ''Z * 'X)
+  operand:         ''Z list * 'W[INT]
+  in expression:
+    dates_in_month (nil,2)
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- 
+
+Process sml finished
+Standard ML of New Jersey (64-bit) v110.99.5 [built: Mon Apr 29 17:17:19 2024]
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+[autoloading]
+[library $SMLNJ-BASIS/basis.cm is stable]
+[library $SMLNJ-BASIS/(basis.cm):basis-common.cm is stable]
+[autoloading done]
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+homeWork1 in week 3.sml:145.8-150.22 Warning: match nonexhaustive
+          x :: xs => ...
+  
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+homeWork1 in week 3.sml:145.8-150.24 Warning: match nonexhaustive
+          x :: xs => ...
+  
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+homeWork1 in week 3.sml:145.8-150.24 Warning: match nonexhaustive
+          x :: xs => ...
+  
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = false : bool
+val test11 = false : bool
+val test12 = false : bool
+val test13 = false : bool
+val test14 = false : bool
+val test15 = false : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = false : bool
+val test111 = false : bool
+val test112 = false : bool
+val test113 = false : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+val member = fn : int * int list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = true : bool
+val test112 = true : bool
+val test113 = true : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+homeWork1 in week 3.sml:156.23 Warning: calling polyEqual
+val member = fn : ''a * ''a list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = true : bool
+val test112 = true : bool
+val test113 = true : bool
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+homeWork1 in week 3.sml:156.23 Warning: calling polyEqual
+val member = fn : ''a * ''a list -> bool
+val remove_dup = fn : int list -> int list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:97.17-97.42 Error: unbound variable or constructor: dates_in_months_challenge
+hw1test.sml:101.17-101.43 Error: unbound variable or constructor: number_in_months_challenge
+val it = () : unit
+- use "hw1test.sml";
+[opening hw1test.sml]
+[opening homeWork1 in week 3.sml]
+homeWork1 in week 3.sml:55.26 Warning: calling polyEqual
+homeWork1 in week 3.sml:26.14 Warning: calling polyEqual
+val is_older = fn : (int * int * int) * (int * int * int) -> bool
+val number_in_month = fn : ('a * ''b * 'c) list * ''b -> int
+val number_in_months = fn : ('a * ''b * 'c) list * ''b list -> int
+val dates_in_month = fn : ('a * ''b * 'c) list * ''b -> ('a * ''b * 'c) list
+val dates_in_months = fn
+  : ('a * ''b * 'c) list * ''b list -> ('a * ''b * 'c) list
+val get_nth = fn : string list * int -> string
+val date_to_string = fn : int * int * int -> string
+exception NoAnswer
+val number_before_reaching_sum = fn : int * int list -> int
+val what_month = fn : int -> int
+val month_range = fn : int * int -> int list
+val oldest = fn : (int * int * int) list -> (int * int * int) option
+homeWork1 in week 3.sml:156.23 Warning: calling polyEqual
+val member = fn : ''a * ''a list -> bool
+val remove_dup = fn : int list -> int list
+val number_in_months_challenge = fn : ('a * int * 'b) list * int list -> int
+val dates_in_months_challenge = fn
+  : (int * int * int) list * int list -> (int * int * int) list
+val it = () : unit
+val test10 = true : bool
+val test11 = true : bool
+val test12 = true : bool
+val test13 = true : bool
+val test14 = true : bool
+val test15 = true : bool
+val test20 = true : bool
+val test21 = true : bool
+val test22 = true : bool
+val test23 = true : bool
+val test31 = true : bool
+val test32 = true : bool
+val test33 = true : bool
+val test34 = true : bool
+hw1test.sml:37.37 Warning: calling polyEqual
+val test40 = true : bool
+val test41 = true : bool
+val test42 = true : bool
+val test43 = true : bool
+hw1test.sml:48.44 Warning: calling polyEqual
+val test50 = true : bool
+val test51 = true : bool
+val test52 = true : bool
+val test53 = true : bool
+val test60 = true : bool
+val test61 = true : bool
+val test62 = true : bool
+val test63 = true : bool
+val test70 = true : bool
+val test71 = true : bool
+val test72 = true : bool
+val test73 = true : bool
+val test80 = true : bool
+val test81 = true : bool
+val test82 = true : bool
+val test83 = true : bool
+val test84 = true : bool
+val test90 = true : bool
+val test91 = true : bool
+val test92 = true : bool
+val test93 = true : bool
+val test100 = true : bool
+val test101 = true : bool
+val test102 = true : bool
+val test103 = true : bool
+val test104 = true : bool
+val test110 = true : bool
+val test111 = true : bool
+val test112 = true : bool
+val test113 = true : bool
+val test000 = true : bool
+val test002 = true : bool
+val test001 = true : bool
+val test120 = true : bool
+val test121 = true : bool
+val test122 = true : bool
+val test123 = true : bool
+val test0000 = true : bool
+val test0010 = true : bool
+val it = () : unit
+- 
